@@ -1,0 +1,73 @@
+﻿span{font-weight:bold;}
+*{margin:0; padding:0;}
+li{list-style:none;}
+img{border:0; vertical-align:middle;}
+address{font-style:normal;}
+	a{color:#222328; text-decoration:none;}
+	body{font-family: 'Noto Sans KR', sans-serif;}
+	html,body{width:100%; height:100%;}
+	#wrapper{position:relative; width:100%; height:100%;}
+	#header{width: 100%; position:absolute; left:0; top:0; height:150px; text-align:center; z-index:1; }
+		#header h1{margin:50px 0;}
+			#header h1 img{width:350px;}
+		#header .dim{display:none; position:fixed;left:0;top:0;width:100%;height:100%;z-index:99;background-color:rgba(0,0,0,0.6);}
+			#header .dim.on{display:block !important;}
+	#gnb{position:absolute;left:15%;top:50px;}
+		#gnb img{width:43px;cursor:pointer;}
+		
+		.gnb{position:fixed;left:-800px;top:0;width:800px;height:100%;background:#fff;z-index:1000;}
+			.gnb .close{position:absolute; left:740px;top:140px; z-index:110;}
+			.gnb .inner{width:750px;padding:250px 0 0 90px;box-sizing:border-box;}
+				.gnb .inner_wrap{position:relative;margin-top:30px;padding-bottom:27px;border-bottom:1px solid #e8e8e8;text-align:left; }
+					.gnb .inner_wrap:first-child{margin-top:0;}
+					.gnb .inner_wrap:last-child{border-bottom:0;}	
+						.gnb .inner_name{display:inline-block;width:180px;line-height:22px;font-size:22px; font-weight:semibold; font-family: 'Noto Sans KR', sans-serif; font-weight:700;}
+							.gnb .inner_wrap a{display:inline-block;font-size:18px;color:#222;margin-right:10px; font-family: 'Noto Sans KR', sans-serif;}
+			
+			
+	#container h2{position:absolute; top:15%; left:37%;
+		font-size:28px;	font-weight:500;
+		color:#e20613;
+	}	
+		#container h2 span{color:#fff; font-weight:500;}
+	#container h1{position:absolute; top:23%; left:35%;
+		font-size:120px; font-family:VANI;
+		color:#fff;
+	}
+	
+	/*메뉴*/
+	#container .menu{
+		position:absolute; top:50%; left:18.5%; 
+	} 
+		#container .menu li{position:absolute; left:0; top:0;
+			width:239px; font-size:26px; text-align:center;
+			line-height:52px;
+			background:rgba(226,6,19,0.8);
+			border-right:1px solid #fff;
+			cursor:pointer;
+		}
+		#container .menu li:nth-of-type(5){
+			border:0;
+		}
+			#container .menu>li>a{
+				color:#fff;
+			}
+	/*뒷배경*/		
+	#container .back{
+		width:100%; height:597px; 
+		background:#444;
+		}
+		
+	#container .brand{
+		width:1200px; height:1500px;
+		margin:0 auto;
+		position:relative;
+		outline:1px solid black;
+	}
+	#container .brandback{
+		position:absolute; top:700px;
+	}
+		#container .brandback img{
+			width:100%;
+			overflow:hidden;
+		}
