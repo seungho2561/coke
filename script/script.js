@@ -39,7 +39,7 @@
 				},*/
 				afterLoad:function(origin, destination, direction){
 					if(origin.index==1){
-						$('.s2 .contents').hide().css({top:'45%'});
+						$('.s2 .contents').hide().css({top:'35%'});
 					}else if(origin.index==2){
 						$('.s3 .contents').hide().css({top:'28%'});
 					}else if(origin.index==3){
@@ -49,11 +49,11 @@
 					}
 					
 					if(destination.index==1){
-						$('.s2 .contents').show().animate({top:"28%"},900);
+						$('.s2 .contents').animate({top:"28%"},300).fadeIn();
 					} else if(destination.index==2){
 						$('.s3 .contents').fadeIn();
 					} else if(destination.index==3){
-						$('.s4 .contents').fadeIn(500);
+						$('.s4 .contents').fadeIn();
 					} else if(destination.index==0){
 					
 					}
@@ -61,7 +61,7 @@
 				}
 			});
 
-	
+	$("#page1 .contents").delay(500).animate({opacity:"1",top:"32%"},500);
 	
 	/*메뉴 열기버튼*/
 	$("#gnb img").click(function(){

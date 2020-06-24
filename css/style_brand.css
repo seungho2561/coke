@@ -62,10 +62,12 @@ address{font-style:normal;}
 		width:1200px; height:1500px;
 		margin:0 auto;
 		position:relative;
-		outline:1px solid black;
+		
 	}
 	#container .brandback{
-		position:absolute; top:700px;
+		position:absolute; top:680px;
+		height:590px; 
+		overflow:hidden;
 	}
 		#container .brandback img{
 			width:100%;
