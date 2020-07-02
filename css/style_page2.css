@@ -1,0 +1,212 @@
+﻿/*page2*/
+		#page2{position:relative;}
+			#page2 .bg_area{position:absolute; left:0; top:0; min-width:100%; min-height:100%; width:100%; height:auto; background-position:50% 0; background-repeat:no-repeat; background-size:cover; background-image:url(../images/bg2.jpg);  z-index:-1; opacity:0.5;}
+			#page2 .contents{opacity:0; position:absolute; left:24%; top:17%; width: 1000px; text-align:center; font-size:70px; z-index:0; font-family:'Noto Sans KR', sans-serif;}
+				#page2 .contents .textlogo{position:absolute; left:33%; top:-120px; background:url(../images/company.png) no-repeat center/cover;width:350px;height:100px;}
+				#page2 .tit{font-weight:700;}
+				#page2 .contents .text_section{ color:#111; font-size:16px;font-family:'Noto Sans KR', sans-serif; margin:40px 0;}
+				#page2 .page2button{width:50px; height:80px; background:#333; position:absolute; top:439px;right:0px; }
+				#page2 .page2button.on a span{
+						border-right: 1px solid #fff;
+						border-left:0;
+						border-bottom:0;
+						border-top: 1px solid #fff;
+						-webkit-transform: rotate(45deg);
+						transform: rotate(45deg);
+						margin-left: -15px;
+					}
+				
+					#page2 .page2button	a {
+						padding-top: 60px;
+						
+					}
+					#page2 .page2button	a span {
+						  position: absolute;
+						  top: 25px;
+						  left: 50%;
+						  width: 24px;
+						  height: 24px;
+						  margin-left: -5px;
+						  border-left: 1px solid #fff;
+						  border-bottom: 1px solid #fff;
+						  -webkit-transform: rotate(45deg);
+						  transform: rotate(45deg);
+						  box-sizing: border-box;
+						transition:all 0.8s;
+					}
+					
+				#page2 .vision{position:absolute; top:220px; right:-350px; transition:all 0.8s;}
+				#page2 .vision.on{right:0px;}
+					#page2 .vision li{width:300px; line-height:70px;  text-align:right; padding-right:30px; margin-bottom:1px; background-color:#fff; transition:all 0.5s;margin-left:20px;}
+					#page2 .vision li:nth-of-type(2){width:240px; margin-left:80px;}
+					#page2 .vision li:nth-of-type(3){width:180px; margin-left:140px;}
+						#page2 .vision li div{background-color:#333; width:100%; height:72px; position:absolute; z-index:0;}
+						#page2 .vision li a{font-size:16px; font-family:'Noto Sans KR'; color:#fff;position: relative; z-index:1;}
+						#page2 .vision li:hover a{color:#fa4d01; transition:all 0.5s;}
+				#page2 .iframe{position:absolute; top:40%; left:27%; -webkit-box-sizing: border-box; width:900px; height:500px; overflow:hidden;}
+					#page2 iframe{position:absolute; top:0; left:0; transition:all 0.8s; opacity:1;   -webkit-box-sizing: border-box;
+						box-sizing: border-box;
+						-webkit-transition: all 0.6s ease;
+						transition: all 1s ease;
+						transform-origin:left;
+					}
+					#page2 iframe.leave{
+						-webkit-transform: rotateY(-180deg);
+						transform: rotateY(-180deg);
+						opacity: 0;
+					}
+
+				/*비즈니스*/
+				#page2 .visionlist>div{display:none; position:absolute; left:24%; top:18%; width: 1000px; text-align:center; font-size:40px; z-index:0; font-family:'Noto Sans KR', sans-serif;}
+					#page2 .visionlist>div>h2{text-align:center; }
+					#page2 .visionlist>div>p{color:#111; font-size:16px;font-family:'Noto Sans KR', sans-serif; margin:40px 0;}
+					/*첫번째 카드*/
+					#page2 .visionlist .fir{
+						  font-size:13px;
+						  position: absolute;
+						  top:195px;
+						  left:104px;
+						  overflow: hidden;
+						  margin: 10px;
+						  min-width: 220px;
+						  max-width: 350px;
+						  max-height: 400px;
+						  width: 100%;
+						  background-color: #000000;
+						  color: #ffffff;
+						  text-align: center;
+						  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+					}
+					#page2 .visionlist>div *{
+						-webkit-box-sizing: border-box;
+						box-sizing: border-box;
+						-webkit-transition: all 0.45s ease-in-out;
+						transition: all 0.45s ease-in-out;
+					}
+						#page2 .visionlist>div img{
+						  max-width: 100%;
+						  width:350px;
+						  height:240px;
+						  position: relative;
+						  opacity: 0.5;
+						}
+						 .visionlist figcaption {
+						  position: absolute;
+						  top: 35%;
+						  left: 7%;
+						  right: 7%;
+						  bottom: 40%;
+						  border: 1px solid white;
+						  border-width: 1px 1px 1px;
+						} 
+							figcaption .head {
+							  overflow: hidden;
+							  -webkit-transform: translateY(50%);
+							  transform: translateY(50%);
+							  position: relative;
+							  bottom: 0;
+							  width: 100%;
+							  display: table;
+							  margin: 0 auto;
+							  padding: 0 10px;
+							  text-align: center;
+							  text-transform: uppercase;
+							  font-weight: 400;
+							}
+							.visionlist>div figcaption h2:before,.business figcaption h2:after {
+							  position: absolute;
+							  display: block;
+							  width: 1000%;
+							  height: 1px;
+							  content:"";
+							  background-color: white;
+							  top: 50%;
+							}
+							.visionlist>div figcaption h2:before {
+							  left: -1000%;
+							}
+							.visionlist>div figcaption h2:after {
+							  right: -1000%;
+							}
+							.visionlist>div figcaption p{
+							  top: 50%;
+							  -webkit-transform: translateY(-50%);
+							  transform: translateY(-50%);
+							  position: absolute;
+							  width: 100%;
+							  padding: 0 20px;
+							  margin: 0;
+							  opacity: 0;
+							  line-height: 1.6em;
+							  font-size: 0.9em;
+							  color:#fff;
+							}
+						.visionlist>div>div:hover img{
+						  opacity: 0.25;
+						  -webkit-transform: scale(1.1);
+						  transform: scale(1.1);
+						}
+						.visionlist>div>div:hover figcaption
+						{
+						  top: 7%;
+						  bottom: 7%;
+						}
+							.visionlist>div>div:hover p
+							{
+							  opacity: 1;
+							  -webkit-transition-delay: 0.35s;
+							  transition-delay: 0.35s;
+							}
+					/*2번째 카드*/
+					#page2 .visionlist>div .sec{
+						  font-size:13px;
+						  position: absolute;
+						  top:195px;
+						  left:504px;
+						  overflow: hidden;
+						  margin: 10px;
+						  min-width: 220px;
+						  max-width: 350px;
+						  max-height: 400px;
+						  width: 100%;
+						  background-color: #000000;
+						  color: #ffffff;
+						  text-align: center;
+						  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+					}
+
+		/*3번째 카드*/
+		#page2 .visionlist>div .thir{
+						  font-size:13px;
+						  position: absolute;
+						  top:450px;
+						  left:104px;
+						  overflow: hidden;
+						  margin: 10px;
+						  min-width: 220px;
+						  max-width: 350px;
+						  max-height: 400px;
+						  width: 100%;
+						  background-color: #000000;
+						  color: #ffffff;
+						  text-align: center;
+						  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+					}
+			/*4번째 카드*/
+			#page2 .visionlist>div .four{
+						  font-size:13px;
+						  position: absolute;
+						  top:450px; left:504px;
+						  overflow: hidden;
+						  margin: 10px;
+						  min-width: 220px;
+						  max-width: 350px;
+						  max-height: 400px;
+						  width: 100%;
+						  background-color: #000000;
+						  color: #ffffff;
+						  text-align: center;
+						  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+					}
+					
+			

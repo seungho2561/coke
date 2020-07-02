@@ -1,167 +1,502 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
-	<head>
-		<meta  charset="utf-8" />
-		<title>Coca-Cola</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="script/jquery.mousewheel.min.js"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700;900&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script type="text/javascript" src="./script/fullpage.min.js"></script>
-		<link href="./css/fullpage.min.css" rel="stylesheet" type="text/css"/>
-		<script src="script/script.js"></script>
-	</head>
-	<body>
-		<div id="wrapper">
-			<div id="header">
-				<h1>
-					<a href="#first">
-						<img src="images/logo1.png" alt="logo" style="width:230px;">
+<head>
+<meta charset="utf-8"/>
+<title>Coca-Cola</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="script/jquery.mousewheel.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="script/script.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style_page2.css">
+</head>
+<body>
+<div id="wrapper">
+	<div class="wrap">
+		<div class="leftwrap">
+		</div>
+		<div class="rightwrap">
+		</div>
+		<img src='images/logo1.png' alt='' style='width:230px;'>
+	</div>
+	<div id="header">
+		<h1>
+		<a href="#first">
+		<img src="images/logo1.png" alt="logo" style="width:230px;">
+		</a>
+		</h1>
+		<a href="#none" id="gnb">
+		<img src="images/menu1.png" alt="menu_button">
+		</a>
+		<div class="gnb on">
+			<a href="#none" class="close">
+			<img src="images/close.png" alt="" style="width:30px;">
+			</a>
+			<div class="inner">
+				<!--메뉴전체창-->
+				<div class="inner_wrap">
+					<!--메뉴1 -->
+					<p class="inner_name">
+						회사소개
+					</p>
+					<!--메뉴의 제목-->
+					<a href="#">회사소개</a>
+					<!--하위메뉴-->
+					<a href="#">목적&비전</a>
+					<!--하위메뉴-->
+					<a href="#">코카콜라 시스템</a>
+					<!--하위메뉴-->
+					<a href="#">리더쉽</a>
+					<!--하위메뉴-->
+					<a href="#">역사</a>
+					<!--하위메뉴-->
+				</div>
+				<!--/메뉴1 -->
+				<div class="inner_wrap">
+					<!--메뉴2 -->
+					<p class="inner_name">
+						브랜드
+					</p>
+					<!--메뉴의 제목-->
+					<a href="#">탄산음료</a>
+					<!--하위메뉴-->
+					<a href="#">물, 이온음료</a>
+					<!--하위메뉴-->
+					<a href="#">주스</a>
+					<!--하위메뉴-->
+					<a href="#">커피</a>
+					<!--하위메뉴-->
+					<a href="#">티</a>
+					<!--하위메뉴-->
+				</div>
+				<!--/메뉴2 -->
+				<div class="inner_wrap">
+					<!--메뉴3 -->
+					<p class="inner_name">
+						더 나은 미래
+					</p>
+					<!--메뉴의 제목-->
+					<a href="#">행동</a>
+					<!--하위메뉴-->
+					<a href="#">커뮤니티</a>
+					<!--하위메뉴-->
+					<a href="#">사람들의 가치</a>
+					<!--하위메뉴-->
+					<a href="#">파트너십</a>
+					<!--하위메뉴-->
+					<a href="#">재단</a>
+					<!--하위메뉴-->
+				</div>
+				<!--/메뉴3 -->
+				<div class="inner_wrap">
+					<!--메뉴4 -->
+					<p class="inner_name">
+						라이프
+					</p>
+					<!--메뉴의 제목-->
+					<a href="#">둘러보기</a>
+					<!--하위메뉴-->
+					<a href="#">푸드</a>
+					<!--하위메뉴-->
+					<a href="#">여행</a>
+					<!--하위메뉴-->
+					<a href="#">스포츠</a>
+					<!--하위메뉴-->
+					<a href="#">컬쳐</a>
+					<!--하위메뉴-->
+				</div>
+				<!--/메뉴4-->
+				<div class="inner_wrap">
+					<!--메뉴5 -->
+					<p class="inner_name">
+						코크 스토리
+					</p>
+					<!--메뉴의 제목-->
+					<a href="#">SINCE 1886</a>
+					<!--하위메뉴-->
+					<a href="#">글로벌 스토리</a>
+					<!--하위메뉴-->
+					<a href="#">브랜드 스토리</a>
+					<!--하위메뉴-->
+					<a href="#">코크 앰배서더</a>
+					<!--하위메뉴-->
+				</div>
+				<!--/메뉴5 -->
+				<div class="inner_wrap">
+					<!--메뉴6 -->
+					<p class="inner_name">
+						CS Center
+					</p>
+					<!--메뉴의 제목-->
+					<a href="#">문의하기</a>
+					<!--하위메뉴-->
+					<a href="#">오시는길</a>
+					<!--하위메뉴-->
+				</div>
+				<!--/메뉴6 -->
+			</div>
+			<!--/메뉴전체창-->
+		</div>
+		<!--gnb끝-->
+		<div class="dim">
+		</div>
+		<!--on클래스를 받으면 검정되는거-->
+	</div>
+	<!--헤더-->
+	<div id="fullpage">
+		<div id="page1" class="section s1">
+			<!--메인페이지 1-->
+			<div class="fp">
+				<div class="bg_area">
+				</div>
+				<div class="contents">
+					<p class="loading">
+						<span>세</span>
+						<span>상</span>
+						<span>을</span>
+						<span>새</span>
+						<span>롭</span>
+						<span>게</span>
+						<span>,</span>
+						<span>차</span>
+						<span>이</span>
+						<span>를</span>
+						<span>만</span>
+						<span>들</span>
+						<span>다</span>
+						<span>.</span>
+					</p>
+					<div class="textlogo">
+					</div>
+					<ul class="category">
+						<li><div><a href="#second"><span class='en'>VISION</span><span class='ko' style="display:none;">비전</span></a></div></li>
+						<li><div><a href="#third"><span class='en'>BUSINESS</span><span class='ko' style="display:none;">비즈니스</span></a></div></li>
+						<li><div><a href="#fourth"><span class='en'>WHO</span><span class='ko' style="display:none;">소개</span></a></div></li>
+					</ul>
+				</div>
+				<div class="line" style="opacity:0;">
+				</div>
+				<div class="scroll">
+					<a href="#second">
+					<span>
+					</span>
 					</a>
-				</h1>
-				
-				<a href="#none" id="gnb">
-					<img src="images/menu1.png" alt="menu_button">
-				</a>
-				<div class="gnb on">
-					<a href="#none" class="close">
-						<img src="images/close.png" alt="" style="width:30px;">
+					<div>
+						SCROLL
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page2" class="section s2">
+			<!--메인페이지 2-->
+			<div class="fp">
+				<div class="bg_area">
+				</div>
+				<div class="contents">
+					<div class="tit">
+						VISION
+					</div>
+					<div class="text_section">
+						우리의 비전은 사람들이 좋아하는 음료 브랜드와 선택을 만들어 몸과 마음에 상쾌하게하는 것입니다.<br>
+						 그리고 더 지속 가능한 사업과 더 나은 공유 미래를 만들어 사람들의 삶, 지역 사회 및 지구를 변화시키는 방식으로 이루어집니다.
+					</div>
+				</div>
+				<div class='page2button'>
+					<a>
+					<span>
+					</span>
 					</a>
-					
-					<div class="inner"><!--메뉴전체창-->
-						<div class="inner_wrap"><!--메뉴1 -->
-							<p class="inner_name">회사소개</p><!--메뉴의 제목-->
-							<a href="#">회사소개</a><!--하위메뉴-->
-							<a href="#">목적&비전</a><!--하위메뉴-->
-							<a href="#">코카콜라 시스템</a><!--하위메뉴-->
-							<a href="#">리더쉽</a><!--하위메뉴-->
-							<a href="#">역사</a><!--하위메뉴-->
-						</div><!--/메뉴1 -->
-						<div class="inner_wrap"><!--메뉴2 -->
-							<p class="inner_name">브랜드</p><!--메뉴의 제목-->
-							<a href="#">탄산음료</a><!--하위메뉴-->
-							<a href="#">물, 이온음료</a><!--하위메뉴-->
-							<a href="#">주스</a><!--하위메뉴-->
-							<a href="#">커피</a><!--하위메뉴-->
-							<a href="#">티</a><!--하위메뉴-->
-						</div><!--/메뉴2 -->
-						<div class="inner_wrap"><!--메뉴3 -->
-							<p class="inner_name">더 나은 미래</p><!--메뉴의 제목-->
-							<a href="#">행동</a><!--하위메뉴-->
-							<a href="#">커뮤니티</a><!--하위메뉴-->
-							<a href="#">사람들의 가치</a><!--하위메뉴-->
-							<a href="#">파트너십</a><!--하위메뉴-->
-							<a href="#">재단</a><!--하위메뉴-->
-						</div><!--/메뉴3 -->
-						<div class="inner_wrap"><!--메뉴4 -->
-							<p class="inner_name">라이프</p><!--메뉴의 제목-->
-							<a href="#">둘러보기</a><!--하위메뉴-->
-							<a href="#">푸드</a><!--하위메뉴-->
-							<a href="#">여행</a><!--하위메뉴-->
-							<a href="#">스포츠</a><!--하위메뉴-->
-							<a href="#">컬쳐</a><!--하위메뉴-->
-						</div><!--/메뉴4-->
-						<div class="inner_wrap"><!--메뉴5 -->
-							<p class="inner_name">코크 스토리</p><!--메뉴의 제목-->
-							<a href="#">SINCE 1886</a><!--하위메뉴-->
-							<a href="#">글로벌 스토리</a><!--하위메뉴-->
-							<a href="#">브랜드 스토리</a><!--하위메뉴-->
-							<a href="#">코크 앰배서더</a><!--하위메뉴-->
-						</div><!--/메뉴5 -->
-						<div class="inner_wrap"><!--메뉴6 -->
-							<p class="inner_name">CS Center</p><!--메뉴의 제목-->
-							<a href="#">문의하기</a><!--하위메뉴-->
-							<a href="#">오시는길</a><!--하위메뉴-->
-						</div><!--/메뉴6 -->
-					</div><!--/메뉴전체창-->
-				</div><!--gnb끝-->
-				<div class="dim"></div>	<!--on클래스를 받으면 검정되는거-->
-			</div><!--헤더-->
-			
-			
-			<div id="fullpage">
-				<div id="page1" class="section s1"><!--메인페이지 1-->
-					<div class="fp">
-						<div class="bg_area">
+				</div>
+				<ul class="vision">
+					<li>
+					<div>
+					</div>
+					<a href="#none">지속가능한 사업</a></li>
+					<li>
+					<div>
+					</div>
+					<a href="#none">지속가능한 포장</a></li>
+					<li>
+					<div>
+					</div>
+					<a href="#none">우리의 제품</a></li>
+				</ul>
+				<div class='iframe'>
+					<iframe width="900" height="500" src="https://www.youtube.com/embed/w8nKCPOk6Y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 	allowfullscreen>
+					</iframe>
+				</div>
+				
+				<div class='visionlist'>
+					<div class='business'>
+						<h2>Sustainable Business</h2>
+						<p>
+							우리 지구는 소중합니다. 저희는 보다 지속 가능하고 더 나은 미래를 만들 수 있는 방법으로 행동합니다.<br>
+							사람들의 삶, 지역 사회 및 지구를 변화시키기위해 올바른 방법으로 사업을 수행합니다.
+						</p>
+						<div class='fir'>
+							<img src='images/coke/1.jpg' alt=''>
+							<figcaption>
+							<h2 class="head">옵션과 선택권 제공</h2>
+							<p>
+								 설탕이 감소 된 음료와 작은 패키지를 포함하여 500가지 이상의 브랜드와 4,100가지 이상의 품종을 제공합니다.
+							</p>
+							</figcaption>
 						</div>
-						<div class="contents"><!--메인페이지 안의 콘텐츠 아래에있다가 위로 살짝올라오게-->
-							세상을 새롭게, 차이를 만들다.
-							<div class= "textlogo"></div>
-							<ul class="category">	
-								<li><a href="#second"><img src="images/vision.png" alt="">Vision</a></li>
-								<li><a href="#third"><img src="images/national.png" alt="">Business</a></li>
-								<li><a href="#fourth"><img src="images/who.png" alt="">Who</a></li>
-							</ul>
+						<div class='sec'>
+							<img src='images/coke/2.jpg' alt=''>
+							<figcaption>
+							<h2 class="head">낭비없는 세상에 집중</h2>
+							<p>
+								우리는 2030년까지 우리가 판매하는 모든 병을 수집하고 재활용 하는 것을 목표로 합니다.
+							</p>
+							</figcaption>
+						</div>
+						<div class='thir'>
+							<img src='images/coke/3.jpg' alt=''>
+							<figcaption>
+							<h2 class="head">음료에 사용된 물 100% 반환</h2>
+							<p>
+								우리는 물 균형을 유지하고 가장 필요한 지역 사회에서 안전하고 깨끗한 식수를 개선하기 위해 노력하고 있습니다.
+							</p>
+							</figcaption>
+						</div>
+						<div class='four'>
+							<img src='images/coke/4.jpg' alt=''>
+							<figcaption>
+							<h2 class="head">탄소 배출량 감소</h2>
+							<p>
+								우리는 2020년까지 탄소 배출량을 25% 줄이는 것을 목표로 합니다.
+							</p>
+							</figcaption>
+						</div>
+					</div>
+					<div class='packing'>
+						<h2>Sustainable Packaging</h2>
+						<p>
+							우리는 포장을 순환 경제의 일부로 만들어 폐기물 없는 세계에서 리더 역할을 한다고 믿습니다.
+						</p>
+						<div class='fir'>
+							<img src='images/coke/1.jpg' alt=''>
+							<figcaption>
+							<h2 class="head">혁신적인 포장 디자인</h2>
+							<p>
+								 우리는 2025년까지 전 세계 포장을 100% 재활용 할 수 있도록 노력하고 있습니다.
+							</p>
+							</figcaption>
+						</div>
+						<div class='sec'>
+							<img src='images/coke/1.jpg' alt=''>
+							<figcaption>
+							<h2 class="head">Collect Recycle Reuse</h2>
+							<p>
+								 우리는 2030년까지 판매 할 때마다 병이나 캔을 수거하여 재활용 할 계획입니다. 모든 포장에는 하나 이상의 생명이 있어야하기 때문입니다.
+							</p>
+							</figcaption>
+						</div>
+						<div class='thir'>
+							<img src='images/coke/1.jpg' alt=''>
+							<figcaption>
+							<h2 class="head">더나은 미래를 위한 파트너십</h2>
+							<p>
+								 우리는 혼자서 할 수 없습니다. 우리는 이해 관계자, 비영리단체, 지역사회, 정부 및 업계와 협력하여 재활용 및 재사용합니다.
+							</p>
+							</figcaption>
+						</div>
+						<div class='four'>
+							<img src='images/coke/1.jpg' alt=''>
+							<figcaption>
+							<h2 class="head">병에서 시작하여 병을 넘어서</h2>
+							<p>
+								 100% 재활용 플라스틱, 완전 재활용 재료, 식물 기반 재료 및 하이브리드 혁신으로 제작 된 병을 사용할 수 있습니다.
+							</p>
+							</figcaption>
+						</div>
+					</div>
+					<div class='product'>
+						<h2>Products</h2>
+						<p>
+							우리의 제품에 있는 것은 필수적입니다. 우리는 최고 품질의 최첨단 성분을 사용하고 설탕 대체품을 줄이며 지속 가능하고 윤리적으로 공급합니다.
+						</p>
+						<div class='fir'>
+							<img src='images/coke/1.jpg' alt=''>
+							<figcaption>
+							<h2 class="head">500개 이상의 브랜드</h2>
+							<p>
+								우리는 유기농 차, 코코넛 워터, 우유 및 잡기 커피와 같은 다양한 음료를 제공하므로 소비자는 다양한 옵션을 이용할 수 있습니다.
+							</p>
+							</figcaption>
+						</div>
+						<div class='sec'>
+							<img src='images/coke/1.jpg' alt=''>
+							<figcaption>
+							<h2 class="head">없거나 낮은 설탕량</h2>
+							<p>
+								우리는 설탕을 적게 먹고 마시는 것이 점점 더 중요하다는 것을 알고 있습니다.
+							</p>
+							</figcaption>
+						</div>
+						<div class='thir'>
+							<img src='images/coke/1.jpg' alt=''>
+							<figcaption>
+							<h2 class="head">스파클링 브랜드의 약 40%가 더 작은 패키지로 제공됩니다</h2>
+							<p>
+								보다 편리한 패키지로 좋아하는 음료를 즐기면서 설탕 섭취를 쉽게 제어 할 수 있습니다.
+							</p>
+							</figcaption>
+						</div>
+						<div class='four'>
+							<img src='images/coke/1.jpg' alt=''>
+							<figcaption>
+							<h2 class="head">추가 영양 및 수분 공급 혜택을 제공하는 추가 음료</h2>
+							<p>
+								우리는 비타민, 미네랄 및 전해질, 유제품, 식물성 및 다른 단맛 수준 옵션을 제공하여 음료를 더 좋고 영양가있게 만드는 방법을 찾습니다.
+							</p>
+							</figcaption>
 						</div>
 					</div>
 				</div>
-				
-				
-				<div id="page2" class="section s2"><!--메인페이지 2-->
-					<div class="fp">
-					<div class="bg_area">
-						</div>
-						<div class="contents">
-							<div class="tit">VISION</div>
-							<div class="textlogo"></div>
-							<div class="text_section">우리의 비전은 사람들이 좋아하는 음료 브랜드와 선택을 만들어 몸과 마음에 상쾌하게하는 것입니다.<br> 그리고 더 지속 가능한 사업과 더 나은 공유 미래를 만들어 사람들의 삶, 지역 사회 및 지구를 변화시키는 방식으로 이루어집니다.</div>
-							
-						</div>
-						<iframe width="900" height="500" src="https://www.youtube.com/embed/w8nKCPOk6Y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-						</iframe>
+			</div>
+		</div>
+		<div id="page3" class="section s3">
+			<!--메인페이지 3 -->
+			<div class="fp">
+				<div class="bg_area">
+				</div>
+				<div class="contents">
+					<div class="tit">
+						BUSINESS
+					</div>
+					<div class="textlogo">
+					</div>
+					<div class="text_section">
+						 우리는 비즈니스를 수행하는 모든 커뮤니티에서 현지 규모로 운영되는 글로벌 비즈니스입니다. <br>
+						 코카콜라 시스템의 강점 덕분에 우리 회사와 전세계 약 225 개의 병입 파트너가 구성되어 있기 때문에 지역에 초점을 둔 글로벌 고객을 확보 할 수 있습니다. <br>
+						 많은 사람들이 우리 회사를 단순히 <b>"코카콜라"</b>라고 생각하지만 시스템은 여러 로컬 채널을 통해 운영됩니다. <br>
+						 코카콜라 외에도 전세계적으로 잘 알려진 브랜드가 포함되어 있습니다.
+					</div>
+					<h2 class="bus"></h2>
+				</div>
+				<div class='page3button'>
+					<p>
+						More About
+					</p>
+					<a href="#"><span></span><span></span><span></span></a>
+					<div class='page3buttonback'>
 					</div>
 				</div>
-				
-				
-				<div id="page3" class="section s3"><!--메인페이지 3 -->
-					<div class="fp">
-					<div class="bg_area">
-						</div>
-						<div class="contents">
-							<div class="tit">BUSINESS</div>
-							<div class="textlogo"></div>
-									<div class="text_section">
-									우리는 비즈니스를 수행하는 모든 커뮤니티에서 현지 규모로 운영되는 글로벌 비즈니스입니다.
-									<br> 코카콜라 시스템의 강점 덕분에 우리 회사와 전세계 약 225 개의 병입 파트너가 구성되어 있기 때문에 지역에 초점을 둔 글로벌 고객을 확보 할 수 있습니다.
-									<br>
-									많은 사람들이 우리 회사를 단순히 <span>"코카콜라"</span>라고 생각하지만 시스템은 여러 로컬 채널을 통해 운영됩니다. 
-									<br>
-									코카콜라 외에도 전세계적으로 잘 알려진 브랜드가 포함되어 있습니다.
+			</div>
+		</div>
+		<div id='page3sub' class='section'>
+			<div class='bg_area'>
+			</div>
+			<h1 class="page3sublogo">
+				<img src="images/company.png" alt="로고">
+			</h1>
+			<div id="container">
+				<h2><span class="red">Refresh</span> the world. Make a <span class="red">difference.</span></h2>
+				<h1>BRANDS</h1>
+				<ul class="page3submenu">
+					<li><a href="#">탄산음료</a></li>
+					<li><a href="#">이온음료</a></li>
+					<li><a href="#">쥬스</a></li>
+					<li><a href="#">커피</a></li>
+					<li><a href="#">차</a></li>
+				</ul>
+				<div class="back">
+				</div>
+				<div class="morebrand">
+					<div class="text">
+						Coca-Cola<br>
+						<span> and so much more</span><br>
+						<span> hundreds of brands, flavors and low-calorie options</span>
+					</div>
+					<!-- <ul class="sparkling">
+						<li class="dietcoke"></li>
+						<li class="dietcoke"></li>
+						<li class="dietcoke"></li>
+						<li class="dietcoke"></li>
+						<li class="dietcoke"></li>
+					</ul> -->
+				</div>
+			<!-- 	<div class="brandback">
+					<img src="images/coke/back3.jpg" alt="">
+				</div> -->
+				<div class='page3button'>
+					<p>
+						Back
+					</p>
+					<a href="#"><span></span><span></span><span></span></a>
+					<div class='page3buttonback'>
+					</div>
+				</div>
+			</div>
 			
-									</div>
-								<h2 class="bus"></h2>
-								<a href="./brand.html"class="brand">About</a>
-						</div>
-					</div>
+		</div>
+		<div id="page4" class="section s4">
+			<!--메인페이지 4-->
+			<div class="fp">
+				<div class="bg_area">
 				</div>
-				<div id="page4" class="section s4"><!--메인페이지 4-->
-					<div class="fp">
-					<div class="bg_area">
-						</div>
-						<div class="contents">
-							<div class="tit">Who We Are</div>
-							<div class="textlogo"></div>
-							<h2 class="refresh"></h2>
-							<div class="text_section">사람들이 좋아하는 음료 브랜드를 만들어, 상쾌한 일상을 제공한다.<br>
-								지속가능한 비즈니스를 통해 사람들의 삶, 우리가 살아가는 지역사회,<br>
-								나아가 지구 전체를 더 나은 방향으로 변화시킨다.</div>
-							<ul class="info">
-								<li><img src="images/a1.png" alt="">1886년<br>5월 8일부터 판매</li>
-								<li><img src="images/a2.png" alt="">소비자에게<br>상쾌함을!</li>
-								<li><img src="images/a3.png" alt="">본사<br>미국 애틀랜타</li>
-								<li><img src="images/a4.png" alt="">전 세계<br>200개국 이상 진출</li>
-								<li><img src="images/a5.png" alt="">500개 이상<br>브랜드</li>
-								<li><img src="images/a6.png" alt="">하루 평균 판매량<br>20억 잔</li>
-							</ul>
-						</div>
+				<div class="contents">
+					<div class="textlogo"></div>
+					<div class="tit">
+						Who We Are
 					</div>
+					<h2 class="refresh"></h2>
+					<div class="text_section">
+						사람들이 좋아하는 음료 브랜드를 만들어, 상쾌한 일상을 제공한다.<br>
+						 지속가능한 비즈니스를 통해 사람들의 삶, 우리가 살아가는 지역사회,<br>
+						 나아가 지구 전체를 더 나은 방향으로 변화시킨다.
+					</div>
+					<ul class="info">
+						<li><img src="images/a1.png" alt="">1886년<br>
+						5월 8일부터 판매</li>
+						<li><img src="images/a2.png" alt="">소비자에게<br>
+						상쾌함을!</li>
+						<li><img src="images/a3.png" alt="">본사<br>
+						미국 애틀랜타</li>
+						<li><img src="images/a4.png" alt="">전 세계<br>
+						200개국 이상 진출</li>
+						<li><img src="images/a5.png" alt="">500개 이상<br>
+						브랜드</li>
+						<li><img src="images/a6.png" alt="">하루 평균 판매량<br>
+						20억 잔</li>
+					</ul>
 				</div>
-			</div><!--컨테이너-->
-			<div id="footer">
-			
-			</div><!--푸터-->
-		</div><!--랩퍼-->
-		
-	</body>
+				<div id="footer">
+					<div class='footerlogo'>
+						<img src='images/footerlogo.svg' alt='footerlogo'>
+					</div>
+					<ul>
+						<li><a href="#none">이용약관</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<li><a href="#none">개인정보처리방침</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<li><a href="#none">신문고</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<li><a href="#none">공장견학</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<li><a href="#none">고객센터</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<li><a href="#none">법적고지</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<li><a href="#none">사이트맵</a></li>
+					</ul>
+					<div>
+						<ul>
+							<li><img src='' alt=''></li>
+							<li><img src='' alt=''></li>
+							<li><img src='' alt=''></li>
+						</ul>
+					</div>
+					<address>
+						&copy; 2020 The Coca-Cola Company. All Rights Reserved.
+					</address>
+				</div>
+				<!--푸터-->
+			</div>
+		</div><!-- page4 끝 -->
+	</div>
+	<!--컨테이너-->
+	
+</div>
+<!--랩퍼-->
+</body>
 </html>
