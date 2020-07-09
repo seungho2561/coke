@@ -10,6 +10,11 @@
 	}).resize();
 	/*새로고침하면 맨위로*/
 	$('html,body').stop().animate({scrollTop:'0',scrollLeft:'0'},500);
+	
+	/*헤더 로고를 누르면 새로고침*/
+	$('#header>h1>a').click(function() {
+		location.reload();
+	});
 	/*키보드 방향키 막기*/
 	window.addEventListener("keydown",function(e){
 		if([32,37,38,39,40].indexOf(e.keyCode) > -1){
@@ -92,6 +97,24 @@
 		$("#page1 .contents .category li:nth-child(3)").delay(4500).animate({opacity:"1",top:"+=50px"},300);
 		$('#page1 .line').delay(4700).animate({opacity:'1',width:'100%'},1500);
 		
+	/*페이지1에서 카테고리 메뉴를 누를때 페이지 이동*/
+	$('#page1 .category li').eq('0').click(function(){
+		m = $('#page2').offset().top;
+		$('html,body').stop().animate({scrollTop:m},1000,'easeOutCubic');
+		$('.s2 .contents').stop(true).delay(1000).animate({opacity:1});
+	});
+		$('#page1 .category li').eq('1').click(function(){
+		m = $('#page3').offset().top;
+		$('html,body').stop().animate({scrollTop:m},1000,'easeOutCubic');
+		$('.s2 .contents').stop(true).delay(1000).animate({opacity:0});
+		$('.s3 .contents').stop(true).delay(1000).animate({opacity:1});
+	});
+		$('#page1 .category li').eq('2').click(function(){
+		m = $('#page4').offset().top;
+		$('html,body').stop().animate({scrollTop:m},1000,'easeOutCubic');
+		$('.s3 .contents').stop(true).delay(1000).animate({opacity:0});
+		$('.s4 .contents').stop(true).delay(1000).animate({opacity:1});
+	});
 		
 	/*페이지2 액션*/
 	$('#page2 .page2button').click(function(){
