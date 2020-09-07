@@ -113,7 +113,7 @@ address{font-style:normal;}
 					-webkit-transform: rotateY(360deg);
 					 transform: rotateY(360deg);
 				}
-					#page1 .contents .category li>div{width:130px; height:130px; border-radius:50%; background:#555; transition:1s; }
+					#page1 .contents .category li>div{width:130px; height:130px; border-radius:50%; background:#2c2a29; transition:1s; }
 					#page1 .contents .category a{font-size:20px; font-family: 'Noto Sans KR'; color:#fff; line-height:130px; font-weight:300; transition:all 1s;}
 						#page1 .contens .category a>span{font-size:20px; font-family: 'Noto Sans KR'; color:#fff; line-height:130px; font-weight:300; transition:all 1s;}
 						
@@ -184,9 +184,11 @@ address{font-style:normal;}
 					line-height:200%;
 					color:#333;
 					transition:all 0.4s;
+					
 				}
 				#page3 .page3button:hover p{
 					color:#fff;
+					font-size:1.1em;
 				}
 					#page3 .page3button a {
 						position:absolute;
@@ -263,67 +265,174 @@ address{font-style:normal;}
 			/*page3sub*/
 			#page3sub{position:absolute;width:1340px; height:937px;}
 				#page3sub .bg_area{position:absolute; left:0; top:0; min-width:100%; min-height:100%; width:100%; height:937px; background-color:#fff; z-index:-1; opacity:1;}
-				#page3sub>h1{width: 100%; position:absolute; left:0; top:0; height:150px; text-align:center; z-index:1; margin:50px 0;}
-					#page3sub>h1 img{width:350px;}
-			#page3sub #container{height:937px;}
-				#page3sub #container h2{position:absolute; top:15%; left:37%;
+				#page3sub>h1{width: 100%; position:absolute; left:0; top:0; height:100px; text-align:center; z-index:1; margin:30px 0;}
+					#page3sub>h1 img{width:300px;}
+			#page3sub #container{height:937px; position:relative;}
+				#page3sub #container h2{position:absolute; top:13%; left:37%;
 					font-size:28px;	font-weight:500;
-					color:#e20613;
+					color:#fff;
 				}	
-				#page3sub #container h2 span{color:#fff; font-weight:500;}
-				#page3sub #container>h1{position:absolute; top:21%; left:35%;
+				#page3sub #container h2 span{color:#e20613; font-weight:500; text-shadow:1px 1px 2px #333;}
+				#page3sub #container>h1{position:absolute; top:18%; left:35%;
 					font-size:120px; font-family:VANI;
 					color:#fff;
+					text-shadow: 1px 1px 6px #111;
+				   -ms-user-select: none; 
+				   -moz-user-select: -moz-none;
+				   -khtml-user-select: none;
+				   -webkit-user-select: none;
+				   user-select: none;
 				}
 				
 				/*메뉴*/
 				#page3sub #container .page3submenu{
-					position:absolute; top:40%; left:18.5%; 
+					position:absolute; top:36%; left:21%; 
 				} 
 					#page3sub #container .page3submenu li{position:absolute; left:0; top:0;
-						width:239px; font-size:22px; text-align:center;
-						line-height:52px;
-						background:rgba(226,6,19,0.8);
-						border-right:1px solid #fff;
+						width:120px; text-align:center;
 						cursor:pointer;
-					}
-					#page3sub #container .page3submenu li:nth-of-type(5){
-						border:0;
 					}
 						#page3sub #container .page3submenu>li>a{
 							color:#fff;
+							font-family: 'Noto Sans KR', sans-serif;
+							 font-size:22px; 
+							 font-weight:700;
+						}
+						#page3sub #container .page3submenu>li>a.on{
+							color:#d80916;
+							transition:all 0.4s;
 						}
 				/*뒷배경*/		
 				#page3sub #container .back{
-					width:100%; height:460px; 
-					background:#444;
+					width:100%; height:410px; 
+					background:#2c2a29;
 					}
-					
-				#page3sub #container .morebrand{
-					width:1200px; height:478px;
-					margin:0 auto;
-					position:relative;
-					
+				/*menu lineup메뉴라인업*/
+				#page3sub #container .menulineup{
+					width:100%;
+					height:45px;
+					position:absolute;
+					top:410px;
+					left:0;
 				}
-					#page3sub #container .morebrand .text{
-						width:350px;
-						font-size:32px; font-family:sans;
-						position:absolute; top:20px; left:600px; z-index:20;
-						text-shadow:1px 1px 0.3px #222;
+					#page3sub #container .in{
+						width:1500px;
+						height:45px;
+						position:absolute;
+						top:0;
+						font-size:15px;
+						font-weight:300;
+						margin-left:530px;
+						color:#666;
+						line-height:45px;
+						display:none;
+						cursor:pointer;
 					}
-						#page3sub #container .morebrand .text span:nth-of-type(1){font-size:20px;}
-						#page3sub #container .morebrand .text span:nth-of-type(2){font-size:16px;}
-				#page3sub #container .brandback{
-					position:absolute; top:350px;
-					height:800px; 
-					overflow:hidden;
-					z-index:-1;
-				}
-					#page3sub #container .brandback img{
-						width:100%;
+					#page3sub #container .in div:hover{
+						background:#f5f5f5;
+						color:#d80916;
+						transition:all 0.5s;
+					}
+						#page3sub #container .in div{
+							display:inline-block;
+							width:200px;
+							height:45px;
+							text-align:center;
+							border-left:1.5px solid rgba(238,238,238,1);
+							
+						}
+						#page3sub #container .in div:last-child{
+							border-right:1.5px solid rgba(238,238,238,1);
+						}
+					#page3sub #container .box1{
+						width:740px;
+						height:400px;
+						position:absolute;
+						top:480px;
+						left:260px;
+						border:3px solid rgba(238,238,238,1);
+						font-family: 'Noto Sans KR', sans-serif;
+						
+					}
+
+					/*박스안에 라인*/
+					#page3sub #container .box1>div:nth-of-type(1){
+						width:3px;
+						height:400px;
+						background-color:rgba(238,238,238,1);
+						position:absolute;
+						left:300px;
+						top:0px;
+						text-indent:-9999px;
+					}
+					/*박스안의 박스*/
+					#page3sub #container .box1>div:nth-of-type(2){
+						width:370px;
+						height:180px;
+						background-color:rgba(238,238,238,1);
+						position:absolute;
+						left:318px;
+						top:10px;
+						padding:20px;
+					}
+					/*박스 안의 이미지박스*/
+					#page3sub #container .box1>div:nth-of-type(3){
+						width:300px;
+						height:400px;
+						position:absolute;
+						left:130px;
+						top:110px;
 					}
 					
 					/**/
+					#page3sub #container .box1 .goods-title{
+						font-size:30px;
+						font-weight:bold;
+						
+					}
+					#page3sub #container .box1 .goods-etitle{
+						margin-top:10px;
+						line-height:20px;
+					}
+					#page3sub #container .box1 .goods-text1{
+						position:absolute;
+						top:240px; left:50px;
+						font-size:14px;
+						width:370px;
+						height:150px;
+					}
+
+					#page3sub #container .box1 .goods-text2{
+						position:absolute;
+						top:240px; left:240px;
+						font-size:14px;
+						width:370px;
+						height:150px;
+					}
+					#page3sub #container .box1 .goods-text1:after{
+						position: absolute;
+						top: 20px;
+						right: 216px;
+						width: 1px;
+						height: 80px;
+						background-color: #c3c3c3;
+						content: "";
+					}
+						#page3sub #container .box1 .infocell{
+							line-height:30px;
+						}
+							#page3sub #container .box1 .infocell .cell0{
+								font-weight:bold;
+							}	
+							#page3sub #container .box1 .infocell .cell1{
+								margin-left:10px;
+							}
+			#page3sub .enjoy img{
+				width:670px;
+				position:absolute;
+				top:480px;
+				left:1050px;
+			}
 			#page3sub .page3button{
 				width:200px; height:100%; 
 				position:absolute; left:0; top:0;

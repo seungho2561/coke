@@ -193,6 +193,67 @@
 		var count = $(this).index();
 		$(".page3submenu li").eq(d).css({left:count*240});
 	});
-	
+	/*페이지3 서브페이지 메뉴 클릭시*/
+	$('.page3submenu li').click(function(){
+		var d = $(this).index();
+		$('.page3submenu li').siblings().find('a').removeClass('on');
+		$(this).find('a').addClass('on');
+		$('#page3sub #container .menulineup').css({'border-bottom':'1.5px solid rgba(238,238,238,1)'});
+		$('#page3sub #container .in').hide();
+		$('#page3sub #container .in').eq(d).show();
+	});
 
+	/*페이지3 서브페이지  음료 종류 클릭시*/
+	$('#page3sub .menulineup .beverage div').eq(0).click(function(){
+		$('#page3sub .box1 div:nth-child(3) img').attr('src','images/coke/coke.png');
+		$('#page3sub .box1 .goods-title').text('코카콜라');
+		$('#page3sub .box1 .goods-etitle').text('가장 기본에 충실한 코카콜라 브랜드의 메인 음료 더 많은 지역에서 판매되는 더 많은 패키지에 다양한 카테고리의 저당 및 무설탕 옵션을 포함하여 사람들이 원하는 음료를 더 많이 제공함으로써 종합 음료 회사가되기위한 비즈니스 전략을 발전시키고 있습니다.');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(1) .cell1').text('500ml');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(2) .cell1').text('224kcal');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(3) .cell1').text('56g');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(4) .cell1').text('54g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(1) .cell1').text('0g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(2) .cell1').text('0g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(3) .cell1').text('0g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(4) .cell1').text('30mg');
+	});
+		$('#page3sub .menulineup .beverage div').eq(1).click(function(){
+		$('#page3sub .box1 div:nth-child(3) img').attr('src','images/coke/sprite.png');
+		$('#page3sub .box1 .goods-title').text('스프라이트');
+		$('#page3sub .box1 .goods-etitle').text('전 세계적으로 팔리고 있는 코카콜라 브랜드의 소다 제품 스프라이트는 레몬 라임 향이 나는 청량 음료로 상쾌하고 깔끔한 맛으로 최고의 컷 스루 상쾌함을 선사합니다.');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(1) .cell1').text('500ml');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(2) .cell1').text('228kcal');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(3) .cell1').text('57g');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(4) .cell1').text('57g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(1) .cell1').text('0g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(2) .cell1').text('0g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(3) .cell1').text('0g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(4) .cell1').text('47mg');
+	});
+		$('#page3sub .menulineup .beverage div').eq(2).click(function(){
+		$('#page3sub .box1 div img').attr('src','images/coke/fanta.png');
+		$('#page3sub .box1 .goods-title').text('환타');
+		$('#page3sub .box1 .goods-etitle').text('코카 콜라 브랜드의 과일맛 탄산음료. 오렌지, 포도, 사과, 파인애플맛 등이 있습니다. 밝고 거품이 많고 인기있는 Fanta는 재미를 더해주는 청량 음료입니다. 1940 년에 소개 된 Fanta는 코카콜라 브랜드에서 두 번째로 오래된 브랜드입니다.');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(1) .cell1').text('355ml');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(2) .cell1').text('156kcal');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(3) .cell1').text('39g');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(4) .cell1').text('39g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(1) .cell1').text('0g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(2) .cell1').text('0g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(3) .cell1').text('0g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(4) .cell1').text('0mg');
+	});
+		$('#page3sub .menulineup .beverage div').eq(3).click(function(){
+		$('#page3sub .box1 div img').attr('src','images/coke/schweppes.png');
+		$('#page3sub .box1 .goods-title').text('슈웹스');
+		$('#page3sub .box1 .goods-etitle').text('세계최초의 청량음료 토닉 워터는 1783 년에 세계 최초의 청량 음료로 시작되었습니다. 창립자 Jacob Schweppe는 탄산 음료의 새로운 기술에 이끌려 생수를 만드는 자신의 프로세스를 정제하고 특허를 얻었습니다. 230 년 이상 동안 Schweppes는 품질과 우수성을 위해 노력해 왔습니다. ');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(1) .cell1').text('350ml');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(2) .cell1').text('136kcal');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(3) .cell1').text('34g');
+		$('#page3sub .box1 .goods-text1 .infocell:nth-child(4) .cell1').text('34g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(1) .cell1').text('0g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(2) .cell1').text('0g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(3) .cell1').text('0g');
+		$('#page3sub .box1 .goods-text2 .infocell:nth-child(4) .cell1').text('60mg');
+	});
 });
