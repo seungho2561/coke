@@ -173,22 +173,22 @@ address{font-style:normal;}
 			#page3 .contents .bus{position:absolute;left:200px;width:600px; height:300px; background:url(../images/bus1.png) no-repeat center/cover;}
 			#page3 .page3button{
 				width:200px; height:100%; 
-				position:absolute; right:0px;
+				position:absolute; right:0px; top:-40px;
 				cursor:pointer;
 			}
 			
 				#page3 .page3button p{
 					position:absolute;
-					top:49.8%; left:30px;
+					top:49.8%; left:10px;
 					font-weight:bold;
 					line-height:200%;
 					color:#333;
 					transition:all 0.4s;
-					
+					font-size:1.1em;
 				}
 				#page3 .page3button:hover p{
 					color:#fff;
-					font-size:1.1em;
+					font-size:1.2em;
 				}
 					#page3 .page3button a {
 						position:absolute;
